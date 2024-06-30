@@ -79,3 +79,20 @@ The `QuoteCache` provides several methods to interact with the cache:
 - `size`, `isEmpty`, `containsKey`, `containsValue`, `clear`: These methods provide additional functionality to interact with the cache.
 
 This implementation of `QuoteCache` ensures that `Quote` objects are stored and retrieved in a thread-safe manner, and that the application can wait for a `Quote` to become available if necessary.
+
+
+## Running the Application
+
+To run the main Trade Processor Application in `PowerShell`, use the following command in your terminal:
+
+```bash
+./mvnw spring-boot:run -D"spring-boot.run.arguments=--spring.profiles.active=default"
+```
+This command uses Maven Wrapper to start the Spring Boot application with the default profile, which is suitable for production or development environments without mock data publishing.
+
+## Running the Mock Data Publisher
+If you want to run the application in `PowerShell` with mock data publishing enabled, you need to activate the mock profile. This can be done by using the following command:
+
+```bash
+./mvnw spring-boot:run -D"spring-boot.run.arguments=--spring.profiles.active=mock"
+```
