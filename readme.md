@@ -96,3 +96,8 @@ If you want to run the application in `PowerShell` with mock data publishing ena
 ```bash
 ./mvnw spring-boot:run -D"spring-boot.run.arguments=--spring.profiles.active=mock"
 ```
+## Architecture Diagram
+
+![Architecture Diagram](docs/ArchitectureDiagram.png)
+
+This diagram illustrates the overall architecture of the application, showing how the different components interact with each other.
